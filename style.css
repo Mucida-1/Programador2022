@@ -1,0 +1,81 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to right, rgb(4, 205, 255),rgb(108, 0, 250));
+}
+.box{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    border-radius: 15px;
+}
+fieldset{
+    border: 3px solid #522974;
+}
+legend{
+    text-align: right;
+    border: 1px solid #522974;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #522974;
+}
+.inputBox{
+    position: relative;
+}
+.inputUser{
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 1px;
+    transition: .5s;
+}
+.labelInput{
+    position: absolute;
+    top: -20px;
+    left: 0px;
+    font-size: 12px;
+}
+.inputUser:focus {
+    border-color: aqua;
+}
+#inputSubj1:checked ~ #labelSubj1{
+    color:aqua;
+}
+#inputSubj2:checked ~ #labelSubj2{
+    color:aqua;
+}
+#inputSubj3:checked ~ #labelSubj3{
+    color:aqua;
+}
+#inputSubj4:checked ~ #labelSubj4{
+    color:aqua;
+}
+#inputSubj5:checked ~ #labelSubj5{
+    color:aqua;
+}
+.labelRadio{
+    font-size: 10pt;
+}
+
+
+#submit{
+    background-image: linear-gradient(to right,#6c00fa,#04cdff);
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+    color: white;
+    padding: 15px;
+    cursor: pointer;
+}
+#submit:hover{
+    background-image: linear-gradient(to right, #5d05cf,#06abd4);
+}
