@@ -1,13 +1,13 @@
 <?php
+    //enviar dados quando submit é acionado
     if(isset($_POST['submit'])){
-        
         include_once('config.php');
         $nome = $_POST['name'];
         $email = $_POST['email'];
         $phone = $_POST['phone'];
         $assunto = $_POST['assunto'];
         $texto = $_POST['txt'];
-
+    //query
         $result = mysqli_query($conexao, "INSERT INTO usuarios(nome,email,telefone,assunto,mensagem) VALUES( '$nome','$email','$phone','$assunto','$texto')");
     }
 ?>
